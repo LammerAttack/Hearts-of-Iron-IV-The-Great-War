@@ -179,7 +179,7 @@ sub_units = {
 	transport_plane = {
 		sprite = heavy_plane
 		priority = 6
-		active = no
+		active = yes
 		type = air_transport
 		need = { transport_plane_equipment = 1 }
 		land_air_wing_size = 100
@@ -213,6 +213,8 @@ sub_units = {
 		active = yes
 		type = naval_bomber
 		need = { ww1_seaplane_equipment_1 = 1 }
+		land_air_wing_size = 100
+		carrier_air_wing_size = 10
 	}
 
 }
