@@ -6,7 +6,6 @@ equipments = {
 		is_archetype = yes
 		picture = archetype_motorized_equipment		
 		is_buildable = no
-		is_convertable = yes
 		type = {
 			#infantry #Removing inf type 
 			motorized
@@ -52,11 +51,6 @@ equipments = {
 	motorized_equipment_2 = {
 		year = 1914
 		archetype = motorized_equipment
-		
-		can_convert_from = { 
-			motorized_equipment_0
-		}
-
 		maximum_speed = 10
 		reliability = 0.7
 		priority = 30
@@ -74,12 +68,6 @@ equipments = {
 	motorized_equipment_1 = {
 		year = 1936
 		archetype = motorized_equipment
-		
-		can_convert_from = { 
-			motorized_equipment_0
-			motorized_equipment_2
-		}
-
 		maximum_speed = 12
 		reliability = 0.8
 		priority = 30

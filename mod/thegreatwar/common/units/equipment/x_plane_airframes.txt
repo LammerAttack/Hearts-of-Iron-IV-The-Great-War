@@ -7,7 +7,6 @@ duplicate_archetypes = {
 
 	small_plane_cas_airframe = {
 		archetype = small_plane_airframe
-		is_convertable = yes
 		type = cas
 		picture = archetype_CAS_equipment
 		air_map_icon_frame = 2
@@ -16,7 +15,6 @@ duplicate_archetypes = {
 	}
 	cv_small_plane_cas_airframe = {
 		archetype = cv_small_plane_airframe
-		is_convertable = yes
 		type = cas
 		#ai_type = cv_cas
 		picture = archetype_CAS_equipment
@@ -26,7 +24,6 @@ duplicate_archetypes = {
 
 	small_plane_naval_bomber_airframe = {
 		archetype = small_plane_airframe
-		is_convertable = yes
 		type = naval_bomber
 		picture = archetype_heavy_fighter_equipment
 		air_map_icon_frame = 3
@@ -35,7 +32,6 @@ duplicate_archetypes = {
 	}
 	cv_small_plane_naval_bomber_airframe = {
 		archetype = cv_small_plane_airframe
-		is_convertable = yes
 		type = naval_bomber
 		#ai_type = cv_naval_bomber
 		picture = archetype_heavy_fighter_equipment
@@ -67,7 +63,6 @@ duplicate_archetypes = {
 
 	medium_plane_fighter_airframe = {
 		archetype = medium_plane_airframe
-		is_convertable = yes
 		type = fighter
 		ai_type = heavy_fighter
 		for_each = {
@@ -80,7 +75,6 @@ duplicate_archetypes = {
 
 	medium_plane_scout_plane_airframe = {
 		archetype = medium_plane_airframe
-		is_convertable = yes
 		type = scout_plane
 		for_each = {
 			air_superiority = { set = 0 }
@@ -95,7 +89,6 @@ duplicate_archetypes = {
 
 	large_plane_maritime_patrol_plane_airframe = {
 		archetype = large_plane_airframe
-		is_convertable = yes
 		type = maritime_patrol_plane
 		air_map_icon_frame = 14
 		interface_overview_category_index = 8
@@ -186,7 +179,6 @@ equipments = {
 	ww1_fighter_equipment_1b = {
 		archetype = small_plane_airframe
 		#parent = ww1_fighter_equipment_1
-		family = ww1_fighter_equipment_1
 		priority = 10
 
 		allow_mission_type = {
@@ -215,10 +207,6 @@ equipments = {
 		archetype = small_plane_airframe
 		parent = ww1_fighter_equipment_1
 		priority = 10
-		
-		can_convert_from = {
-			ww1_fighter_equipment_1
-		}
 
 		allow_mission_type = {
 			air_superiority
@@ -248,10 +236,6 @@ equipments = {
 		parent = ww1_fighter_equipment_1
 		priority = 10
 
-		can_convert_from = {
-			ww1_fighter_equipment_1
-		}
-
 		allow_mission_type = {
 			air_superiority
 			interception
@@ -279,12 +263,6 @@ equipments = {
 		parent = ww1_fighter_equipment_2
 		priority = 5
 
-
-		can_convert_from = {
-			ww1_fighter_equipment_1
-			ww1_fighter_equipment_2
-		}
-
 		allow_mission_type = {
 			air_superiority
 			interception
@@ -310,12 +288,6 @@ equipments = {
 		archetype = small_plane_airframe
 		parent = ww1_fighter_equipment_3
 		priority = 5
-
-		can_convert_from = {
-			ww1_fighter_equipment_1
-			ww1_fighter_equipment_2
-			ww1_fighter_equipment_3
-		}
 
 		allow_mission_type = {
 			air_superiority
@@ -344,13 +316,6 @@ equipments = {
 		parent = ww1_fighter_equipment_4
 		priority = 5
 
-		can_convert_from = {
-			ww1_fighter_equipment_1
-			ww1_fighter_equipment_2
-			ww1_fighter_equipment_3
-			ww1_fighter_equipment_4
-		}
-
 		allow_mission_type = {
 			air_superiority
 			interception
@@ -377,14 +342,6 @@ equipments = {
 		archetype = small_plane_airframe
 		parent = ww1_fighter_equipment_5
 		priority = 5
-
-		can_convert_from = {
-			ww1_fighter_equipment_1
-			ww1_fighter_equipment_2
-			ww1_fighter_equipment_3
-			ww1_fighter_equipment_4
-			ww1_fighter_equipment_5
-		}
 
 		allow_mission_type = {
 			air_superiority
@@ -421,15 +378,6 @@ equipments = {
 		archetype = small_plane_airframe
 		parent = ww1_fighter_equipment_6
 		priority = 5
-
-		can_convert_from = {
-			ww1_fighter_equipment_1
-			ww1_fighter_equipment_2
-			ww1_fighter_equipment_3
-			ww1_fighter_equipment_4
-			ww1_fighter_equipment_5
-			ww1_fighter_equipment_6
-		}
 
 		allow_mission_type = {
 			air_superiority
@@ -484,16 +432,6 @@ equipments = {
 		parent = fighter_equipment_0
 		priority = 10
 
-		can_convert_from = {
-			ww1_fighter_equipment_1
-			ww1_fighter_equipment_2
-			ww1_fighter_equipment_3
-			ww1_fighter_equipment_4
-			ww1_fighter_equipment_5
-			ww1_fighter_equipment_6
-			fighter_equipment_0
-		}
-
 		air_range = 700
 		maximum_speed = 500
 		air_agility = 50
@@ -525,17 +463,6 @@ equipments = {
 		archetype = small_plane_airframe
 		parent = fighter_equipment_1
 		priority = 10
-
-		can_convert_from = {
-			ww1_fighter_equipment_1
-			ww1_fighter_equipment_2
-			ww1_fighter_equipment_3
-			ww1_fighter_equipment_4
-			ww1_fighter_equipment_5
-			ww1_fighter_equipment_6
-			fighter_equipment_0
-			fighter_equipment_1
-		}
 
 		air_range = 1000
 		maximum_speed = 650
@@ -569,19 +496,6 @@ equipments = {
 		parent = fighter_equipment_2
 		priority = 10
 
-		can_convert_from = {
-			ww1_fighter_equipment_1
-			ww1_fighter_equipment_2
-			ww1_fighter_equipment_3
-			ww1_fighter_equipment_4
-			ww1_fighter_equipment_5
-			ww1_fighter_equipment_6
-			fighter_equipment_0
-			fighter_equipment_1
-			fighter_equipment_2
-		}
-
-
 		air_range = 1200
 		maximum_speed = 720
 		air_agility = 80
@@ -610,22 +524,8 @@ equipments = {
 	jet_fighter_equipment_1 = {
 		year = 1945
 
-		archetype = small_plane_airframe #jet_fighter_equipment
-		parent = fighter_equipment_3
+		archetype = jet_fighter_equipment
 		priority = 20
-
-		can_convert_from = {
-			ww1_fighter_equipment_1
-			ww1_fighter_equipment_2
-			ww1_fighter_equipment_3
-			ww1_fighter_equipment_4
-			ww1_fighter_equipment_5
-			ww1_fighter_equipment_6
-			fighter_equipment_0
-			fighter_equipment_1
-			fighter_equipment_2
-			fighter_equipment_3
-		}
 
 		allow_mission_type = {
 			air_superiority
@@ -668,23 +568,9 @@ equipments = {
 	jet_fighter_equipment_2 = {
 		year = 1950
 
-		archetype = small_plane_airframe #jet_fighter_equipment
+		archetype = jet_fighter_equipment
 		parent = jet_fighter_equipment_1
 		priority = 20
-
-		can_convert_from = {
-			ww1_fighter_equipment_1
-			ww1_fighter_equipment_2
-			ww1_fighter_equipment_3
-			ww1_fighter_equipment_4
-			ww1_fighter_equipment_5
-			ww1_fighter_equipment_6
-			fighter_equipment_0
-			fighter_equipment_1
-			fighter_equipment_2
-			fighter_equipment_3
-			jet_fighter_equipment_1
-		}
 
 		air_range = 2200
 		maximum_speed = 1100
@@ -743,11 +629,6 @@ equipments = {
 		carrier_capable = yes
 		priority = 30
 		
-		can_convert_from = {
-			ww1_seaplane_equipment_1
-		}
-
-
 		air_range = 540
 		maximum_speed = 230
 		air_agility = 35
@@ -771,13 +652,8 @@ equipments = {
 		year = 1933
 
 		archetype = cv_small_plane_airframe
-		family = fighter_equipment_0
 		carrier_capable = yes
 		priority = 30
-
-		can_convert_from = {
-			fighter_equipment_0
-		}
 
 		allow_mission_type = {
 			air_superiority
@@ -826,14 +702,8 @@ equipments = {
 
 		archetype = cv_small_plane_airframe
 		parent = cv_fighter_equipment_0
-		family = fighter_equipment_1
 		carrier_capable = yes
 		priority = 30
-
-		can_convert_from = {
-			fighter_equipment_0
-			fighter_equipment_1
-		}
 
 		air_range = 560
 		maximum_speed =	450
@@ -865,14 +735,8 @@ equipments = {
 
 		archetype = cv_small_plane_airframe
 		parent = cv_fighter_equipment_1
-		family = fighter_equipment_2
 		carrier_capable = yes
 		priority = 30
-
-		can_convert_from = {
-			fighter_equipment_1
-			fighter_equipment_2
-		}
 
 		air_range = 800
 		maximum_speed =	585
@@ -903,14 +767,8 @@ equipments = {
 
 		archetype = cv_small_plane_airframe
 		parent = cv_fighter_equipment_2
-		family = fighter_equipment_3
 		carrier_capable = yes
 		priority = 30
-
-		can_convert_from = {
-			fighter_equipment_2
-			fighter_equipment_3
-		}
 
 		air_range = 960
 		maximum_speed =	648
@@ -995,10 +853,6 @@ equipments = {
 		parent = CAS_equipment_1
 		priority = 40
 
-		can_convert_from = {
-			CAS_equipment_1
-		}
-
 		air_range = 1000
 		maximum_speed = 450
 		air_agility = 39
@@ -1030,10 +884,6 @@ equipments = {
 		archetype = small_plane_cas_airframe
 		parent = CAS_equipment_2
 		priority = 40
-
-		can_convert_from = {
-			CAS_equipment_2
-		}
 
 		air_range = 1200
 		maximum_speed = 550
@@ -1070,13 +920,8 @@ equipments = {
 		year = 1936
 
 		archetype = cv_small_plane_cas_airframe
-		family = CAS_equipment_1
 		carrier_capable = yes
 		priority = 50
-
-		can_convert_from = {
-			CAS_equipment_1
-		}
 
 		allow_mission_type = {
 			cas
@@ -1124,14 +969,8 @@ equipments = {
 
 		archetype = cv_small_plane_cas_airframe
 		parent = cv_CAS_equipment_1
-		family = CAS_equipment_2
 		carrier_capable = yes
 		priority = 50
-
-		can_convert_from = {
-			CAS_equipment_1
-			CAS_equipment_2
-		}
 
 		air_range = 640
 		maximum_speed =	405
@@ -1163,14 +1002,8 @@ equipments = {
 
 		archetype = cv_small_plane_cas_airframe
 		parent = cv_CAS_equipment_2
-		family = CAS_equipment_3
 		carrier_capable = yes
 		priority = 50
-
-		can_convert_from = {
-			CAS_equipment_2
-			CAS_equipment_3
-		}
 
 		air_range = 800
 		maximum_speed =	495
@@ -1207,13 +1040,7 @@ equipments = {
 		year = 1936
 
 		archetype = small_plane_naval_bomber_airframe
-		parent = ww1_seaplane_equipment_2
 		priority = 60
-
-		can_convert_from = {
-			ww1_seaplane_equipment_1
-			ww1_seaplane_equipment_2
-		}
 
 		allow_mission_type = {
 			naval_bomber
@@ -1262,12 +1089,6 @@ equipments = {
 		parent = nav_bomber_equipment_1
 		priority = 60
 
-		can_convert_from = {
-			ww1_seaplane_equipment_1
-			ww1_seaplane_equipment_2
-			nav_bomber_equipment_1
-		}
-		
 		air_range = 930
 		maximum_speed = 300 
 		air_agility = 35
@@ -1298,13 +1119,6 @@ equipments = {
 		archetype = small_plane_naval_bomber_airframe
 		parent = nav_bomber_equipment_2
 		priority = 60
-
-		can_convert_from = {
-			ww1_seaplane_equipment_1
-			ww1_seaplane_equipment_2
-			nav_bomber_equipment_1
-			nav_bomber_equipment_2
-		}
 
 		air_range = 1100
 		maximum_speed = 400
@@ -1340,13 +1154,8 @@ equipments = {
 		year = 1936
 
 		archetype = cv_small_plane_naval_bomber_airframe
-		family = nav_bomber_equipment_1
 		carrier_capable = yes
 		priority = 70
-
-		can_convert_from = {
-			nav_bomber_equipment_1
-		}
 
 		allow_mission_type = {
 			naval_bomber
@@ -1395,14 +1204,8 @@ equipments = {
 
 		archetype = cv_small_plane_naval_bomber_airframe
 		parent = cv_nav_bomber_equipment_1
-		family = nav_bomber_equipment_2
 		carrier_capable = yes
 		priority = 70
-
-		can_convert_from = {
-			nav_bomber_equipment_1
-			nav_bomber_equipment_2
-		}
 
 		air_range = 744
 		maximum_speed =	270
@@ -1431,15 +1234,8 @@ equipments = {
 
 		archetype = cv_small_plane_naval_bomber_airframe
 		parent = cv_nav_bomber_equipment_2
-		family = nav_bomber_equipment_3
 		carrier_capable = yes
 		priority = 70
-
-		can_convert_from = {
-			nav_bomber_equipment_1
-			nav_bomber_equipment_2
-			nav_bomber_equipment_3
-		}
 
 		air_range = 880
 		maximum_speed =	360
@@ -1513,10 +1309,6 @@ equipments = {
 		parent = rocket_interceptor_equipment_1
 		priority = 80
 
-		can_convert_from ={
-			rocket_interceptor_equipment_1
-		}
-
 		air_range = 300
 		maximum_speed = 1100
 		air_agility = 36
@@ -1543,10 +1335,6 @@ equipments = {
 		archetype = rocket_interceptor_equipment
 		parent = rocket_interceptor_equipment_2
 		priority = 80
-
-		can_convert_from ={
-			rocket_interceptor_equipment_2
-		}
 
 		air_range = 500
 		maximum_speed = 1150
@@ -1654,10 +1442,6 @@ equipments = {
 		parent = ww1_bomber_equipment_1
 		priority = 105
 
-		can_convert_from = {
-			ww1_bomber_equipment_1
-		}
-
 		allow_mission_type = {
 			cas
 			strategic_bomber
@@ -1688,11 +1472,6 @@ equipments = {
 		archetype = medium_plane_airframe
 		parent = ww1_bomber_equipment_2
 		priority = 105
-
-		can_convert_from = {
-			ww1_bomber_equipment_1
-			ww1_bomber_equipment_2
-		}
 
 		allow_mission_type = {
 			cas
@@ -1725,12 +1504,6 @@ equipments = {
 		archetype = medium_plane_airframe
 		parent = ww1_bomber_equipment_3
 		priority = 105
-
-		can_convert_from = {
-			ww1_bomber_equipment_1
-			ww1_bomber_equipment_2
-			ww1_bomber_equipment_3
-		}
 
 		allow_mission_type = {
 			cas
@@ -1771,13 +1544,6 @@ equipments = {
 		archetype = medium_plane_airframe
 		parent = ww1_bomber_equipment_4
 		priority = 105
-
-		can_convert_from = {
-			ww1_bomber_equipment_1
-			ww1_bomber_equipment_2
-			ww1_bomber_equipment_3
-			ww1_bomber_equipment_4
-		}
 
 		allow_mission_type = {
 			cas
@@ -1830,14 +1596,6 @@ equipments = {
 		parent = tac_bomber_equipment_0
 		priority = 110
 
-		can_convert_from = {
-			ww1_bomber_equipment_1
-			ww1_bomber_equipment_2
-			ww1_bomber_equipment_3
-			ww1_bomber_equipment_4
-			tac_bomber_equipment_0
-		}
-
 		air_range = 2400
 		maximum_speed = 430
 		air_agility =20
@@ -1870,15 +1628,6 @@ equipments = {
 		archetype = medium_plane_airframe
 		parent = tac_bomber_equipment_1
 		priority = 110
-
-		can_convert_from = {
-			ww1_bomber_equipment_1
-			ww1_bomber_equipment_2
-			ww1_bomber_equipment_3
-			ww1_bomber_equipment_4
-			tac_bomber_equipment_0
-			tac_bomber_equipment_1
-		}
 
 		air_range = 2500
 		maximum_speed = 440
@@ -1913,16 +1662,6 @@ equipments = {
 		parent = tac_bomber_equipment_2
 		priority = 110
 
-		can_convert_from = {
-			ww1_bomber_equipment_1
-			ww1_bomber_equipment_2
-			ww1_bomber_equipment_3
-			ww1_bomber_equipment_4
-			tac_bomber_equipment_0
-			tac_bomber_equipment_1
-			tac_bomber_equipment_2
-		}
-
 		air_range = 3000
 		maximum_speed = 480
 		air_agility = 30
@@ -1952,20 +1691,8 @@ equipments = {
 	jet_tac_bomber_equipment_1 = {
 		year = 1945
 
-		archetype = medium_plane_airframe #jet_tac_bomber_equipment
-		parent = strat_bomber_equipment_3
+		archetype = jet_tac_bomber_equipment
 		priority = 120
-
-		can_convert_from = {
-			ww1_bomber_equipment_1
-			ww1_bomber_equipment_2
-			ww1_bomber_equipment_3
-			ww1_bomber_equipment_4
-			tac_bomber_equipment_0
-			tac_bomber_equipment_1
-			tac_bomber_equipment_2
-			tac_bomber_equipment_3
-		}
 
 		allow_mission_type = {
 			cas
@@ -2015,21 +1742,9 @@ equipments = {
 	jet_tac_bomber_equipment_2 = {
 		year = 1950
 
-		archetype = medium_plane_airframe #jet_tac_bomber_equipment
+		archetype = jet_tac_bomber_equipment
 		parent = jet_tac_bomber_equipment_1
 		priority = 120
-
-		can_convert_from = {
-			ww1_bomber_equipment_1
-			ww1_bomber_equipment_2
-			ww1_bomber_equipment_3
-			ww1_bomber_equipment_4
-			tac_bomber_equipment_0
-			tac_bomber_equipment_1
-			tac_bomber_equipment_2
-			tac_bomber_equipment_3
-			jet_tac_bomber_equipment_1
-		}
 
 		air_range = 5000
 		maximum_speed = 1000
@@ -2111,10 +1826,6 @@ equipments = {
 		parent = heavy_fighter_equipment_1
 		priority = 100
 
-		can_convert_from = {
-			heavy_fighter_equipment_1
-		}
-
 		air_range = 1700
 		maximum_speed = 550
 		air_agility = 30
@@ -2143,11 +1854,6 @@ equipments = {
 		archetype = medium_plane_fighter_airframe
 		parent = heavy_fighter_equipment_2
 		priority = 100
-
-		can_convert_from = {
-			heavy_fighter_equipment_1
-			heavy_fighter_equipment_2
-		}
 
 		air_range = 2000
 		maximum_speed = 600
@@ -2216,10 +1922,6 @@ equipments = {
 		archetype = medium_plane_scout_plane_airframe
 		parent = scout_plane_equipment_1
 		priority = 100
-
-		can_convert_from = {
-			scout_plane_equipment_1
-		}
 
 		air_range = 1700
 		maximum_speed = 550
@@ -2301,10 +2003,6 @@ equipments = {
 		parent = strat_bomber_equipment_1
 		priority = 140
 
-		can_convert_from = {
-			strat_bomber_equipment_1
-		}
-
 		air_range = 3500
 		maximum_speed = 450
 		air_agility = 7
@@ -2336,11 +2034,6 @@ equipments = {
 		parent = strat_bomber_equipment_2
 		priority = 140
 
-		can_convert_from = {
-			strat_bomber_equipment_1
-			strat_bomber_equipment_2
-		}
-
 		air_range = 5000
 		maximum_speed = 500
 		air_agility = 10
@@ -2368,15 +2061,8 @@ equipments = {
 	jet_strat_bomber_equipment_1 = {
 		year = 1950
 
-		archetype = large_plane_airframe #jet_strat_bomber_equipment
-		parent = strat_bomber_equipment_3
+		archetype = jet_strat_bomber_equipment
 		priority = 150
-
-		can_convert_from = {
-			strat_bomber_equipment_1
-			strat_bomber_equipment_2
-			strat_bomber_equipment_3
-		}
 
 		allow_mission_type = {
 			strategic_bomber
@@ -2454,10 +2140,6 @@ equipments = {
 		archetype = airship_bomber_equipment
 		parent = ww1_zeppelin_equipment_1
 		priority = 140
-
-		can_convert_from = {
-			ww1_zeppelin_equipment_1
-		}
 
 		allow_mission_type = {
 			strategic_bomber

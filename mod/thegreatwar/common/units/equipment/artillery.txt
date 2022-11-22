@@ -4,7 +4,6 @@ equipments = {
 		year = 1900
 
 		is_archetype = yes
-		is_convertable = yes
 		picture = archetype_artillery_equipment		
 		type = {
 			artillery
@@ -44,7 +43,6 @@ equipments = {
 	bertha_artillery_equipment =
 	{
 		is_archetype = yes
-		is_convertable = yes
 		type = { 
 			artillery
 			motorized
@@ -87,10 +85,6 @@ equipments = {
 		priority = 60
 		visual_level = 1
 		
-		can_convert_from = {
-			bertha_artillery_equipment_1
-		}
-
 		defense = 15
 		breakthrough = 12
 		soft_attack = 64
@@ -108,11 +102,6 @@ equipments = {
 		priority = 60
 		visual_level = 1
 		
-		can_convert_from = {
-			bertha_artillery_equipment_1
-			bertha_artillery_equipment_2
-		}
-
 		defense = 18
 		breakthrough = 12
 		soft_attack = 64
@@ -126,7 +115,6 @@ equipments = {
 	# Nebelwerfers!
 	rocket_artillery_equipment = {
 		is_archetype = yes
-		is_convertable = yes
 		type = { 
 			artillery
 			motorized
@@ -170,10 +158,6 @@ equipments = {
 		priority = 60
 		visual_level = 1
 		
-		can_convert_from = {
-			rocket_artillery_equipment_1
-		}
-
 		defense = 15
 		breakthrough = 12
 		soft_attack = 64
@@ -258,10 +242,6 @@ equipments = {
 		priority = 50
 		visual_level = 1
 
-		can_convert_from = {
-			light_field_gun_equipment_1
-		}
-
 		reliability = 0.8
 		defense = 4.5
 		breakthrough = 2.5
@@ -285,11 +265,6 @@ equipments = {
 		parent = light_field_gun_equipment_2
 		priority = 50
 		visual_level = 0
-
-		can_convert_from = {
-			light_field_gun_equipment_1
-			light_field_gun_equipment_2
-		}
 
 		#Defensive Abilities
 		defense = 6
@@ -315,12 +290,6 @@ equipments = {
 		priority = 50
 		visual_level = 1
 
-		can_convert_from = {
-			light_field_gun_equipment_1
-			light_field_gun_equipment_2
-			artillery_equipment_1
-		}
-
 		defense = 15
 		breakthrough = 7
 
@@ -342,13 +311,6 @@ equipments = {
 		priority = 50
 		visual_level = 2
 		
-		can_convert_from = {
-			light_field_gun_equipment_1
-			light_field_gun_equipment_2
-			artillery_equipment_1
-			artillery_equipment_2
-		}
-
 		defense = 18
 		breakthrough = 8
 		soft_attack = 50
@@ -383,14 +345,6 @@ equipments = {
 		archetype = light_howitzer_equipment
 		priority = 50
 		visual_level = 0
-
-		can_convert_from = {
-			light_field_gun_equipment_1
-			light_field_gun_equipment_2
-			artillery_equipment_1
-			artillery_equipment_2
-			artillery_equipment_3
-		}
 	}
 
 	light_howitzer_equipment_2 = {
@@ -403,11 +357,6 @@ equipments = {
 		parent = light_howitzer_equipment_1
 		priority = 50
 		visual_level = 1
-
-		can_convert_from = {
-			inherit
-			light_howitzer_equipment_1
-		}
 	}
 
 	light_howitzer_equipment_3 = {
@@ -420,16 +369,6 @@ equipments = {
 		parent = light_howitzer_equipment_2
 		priority = 50
 		visual_level = 2
-
-	
-		can_convert_from = {
-			light_field_gun_equipment_1
-			light_field_gun_equipment_2
-			artillery_equipment_1
-			artillery_equipment_2
-			artillery_equipment_3
-			light_howitzer_equipment_2
-		}
 	}
 
 	light_howitzer_equipment_4 = {
@@ -442,21 +381,10 @@ equipments = {
 		parent = light_howitzer_equipment_3
 		priority = 50
 		visual_level = 3
-		
-		can_convert_from = {
-			light_field_gun_equipment_1
-			light_field_gun_equipment_2
-			artillery_equipment_1
-			artillery_equipment_2
-			artillery_equipment_3
-			light_howitzer_equipment_2
-			light_howitzer_equipment_3
-		}
 	}
 
 	heavy_field_gun_equipment = {
 		is_archetype = yes
-		is_convertable = yes
 		type = { artillery motorized }
 		group_by = archetype
 		interface_category = interface_category_land
@@ -501,10 +429,6 @@ equipments = {
 		archetype = heavy_field_gun_equipment
 		parent = heavy_field_gun_equipment_1
 
-		can_convert_from = {
-			heavy_field_gun_equipment_1
-		}
-
 		defense = 12
 		breakthrough = 4.5
 		soft_attack = 23
@@ -525,11 +449,6 @@ equipments = {
 
 		archetype = heavy_field_gun_equipment
 		parent = heavy_field_gun_equipment_2
-
-		can_convert_from = {
-			heavy_field_gun_equipment_1
-			heavy_field_gun_equipment_2
-		}
 
 		defense = 13
 		breakthrough = 6.5
@@ -553,12 +472,6 @@ equipments = {
 
 		archetype = heavy_field_gun_equipment
 		parent = heavy_field_gun_equipment_3
-
-		can_convert_from = {
-			heavy_field_gun_equipment_1
-			heavy_field_gun_equipment_2
-			heavy_field_gun_equipment_3
-		}
 
 		defense = 17
 		breakthrough = 9.5
