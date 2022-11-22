@@ -245,7 +245,10 @@ equipments = {
 
 		priority = 10
 		visual_level = 0
-		is_convertable = yes
+
+		can_convert_from = { 
+			gw_tank_equipment
+		}
 
 		#Misc Abilities
 		maximum_speed = 6
@@ -274,11 +277,16 @@ equipments = {
 		year = 1917
 
 		archetype = light_tank_chassis
-		parent = gw_tank_equipment
+		#parent = gw_tank_equipment
+		family = ww1_light_tank_equipment_1
 
 		priority = 10
 		visual_level = 0
-		is_convertable = yes
+
+		can_convert_from = { 
+			gw_tank_equipment
+			ww1_light_tank_equipment_1
+		}
 
 		#Misc Abilities
 		maximum_speed = 6
@@ -312,7 +320,11 @@ equipments = {
 
 		priority = 10
 		visual_level = 0
-		is_convertable = yes
+		
+		can_convert_from = { 
+			gw_tank_equipment
+			ww1_light_tank_equipment_1
+		}
 
 		#Misc Abilities
 		maximum_speed = 7
@@ -345,7 +357,12 @@ equipments = {
 
 		priority = 10
 		visual_level = 0
-		is_convertable = yes
+
+		can_convert_from = { 
+			gw_tank_equipment
+			ww1_light_tank_equipment_1
+			ww1_light_tank_equipment_2
+		}
 
 		#Misc Abilities
 		maximum_speed = 8
@@ -382,10 +399,17 @@ equipments = {
 		year = 1934
 		
 		archetype = light_tank_chassis
-		parent = gw_tank_equipment
+		#parent = gw_tank_equipment
+		parent = ww1_light_tank_equipment_3
 		priority = 10
 		visual_level = 0
-		is_convertable = yes
+
+		can_convert_from = { 
+			gw_tank_equipment
+			ww1_light_tank_equipment_1
+			ww1_light_tank_equipment_2
+			ww1_light_tank_equipment_3
+		}
 
 		#Misc Abilities
 		maximum_speed = 10
@@ -422,7 +446,14 @@ equipments = {
 		parent = light_tank_equipment_1
 		priority = 10
 		visual_level = 1
-		is_convertable = yes
+
+		can_convert_from = { 
+			gw_tank_equipment
+			ww1_light_tank_equipment_1
+			ww1_light_tank_equipment_2
+			ww1_light_tank_equipment_3
+			light_tank_equipment_1
+		}
 
 		#Misc Abilities
 		maximum_speed = 12
@@ -452,7 +483,15 @@ equipments = {
 		parent = light_tank_equipment_2
 		priority = 10
 		visual_level = 2
-		is_convertable = yes
+
+		can_convert_from = {
+			gw_tank_equipment
+			ww1_light_tank_equipment_1
+			ww1_light_tank_equipment_2
+			ww1_light_tank_equipment_3
+			light_tank_equipment_1
+			light_tank_equipment_2
+		}
 
 		#Misc Abilities
 		maximum_speed = 14
@@ -483,6 +522,7 @@ equipments = {
 		priority = 20
 		visual_level = 0
 		can_convert_from = { 
+			ww1_light_tank_equipment_3
 			light_tank_equipment_1 
 		}
 
@@ -592,6 +632,7 @@ equipments = {
 		priority = 40
 		visual_level = 0
 		can_convert_from = { 
+			ww1_light_tank_equipment_3
 			light_tank_equipment_1 
 		}
 		upgrades = {
@@ -702,6 +743,7 @@ equipments = {
 		priority = 30
 		visual_level = 0
 		can_convert_from = { 
+			ww1_light_tank_equipment_3
 			light_tank_equipment_1 
 		}
 		upgrades = {
@@ -808,7 +850,6 @@ equipments = {
 		archetype = medium_tank_chassis
 		priority = 50
 		visual_level = 0
-		is_convertable = yes
 		upgrades = {
 			tank_reliability_upgrade
 			tank_engine_upgrade
@@ -852,7 +893,10 @@ equipments = {
 		parent = medium_tank_equipment_1
 		priority = 50
 		visual_level = 1
-		is_convertable = yes
+
+		can_convert_from = { 
+			medium_tank_equipment_1
+		}
 						
 		#Misc Abilities
 		maximum_speed = 9
@@ -884,7 +928,11 @@ equipments = {
 		parent = medium_tank_equipment_2
 		priority = 50
 		visual_level = 2
-		is_convertable = yes
+
+		can_convert_from = { 
+			medium_tank_equipment_1
+			medium_tank_equipment_2
+		}
 		
 		#Misc Abilities
 		maximum_speed = 10
@@ -1259,7 +1307,6 @@ equipments = {
 		archetype = heavy_tank_chassis
 		priority = 90
 		visual_level = 0
-		is_convertable = yes
 
 		upgrades = {
 			tank_armor_upgrade
@@ -1298,7 +1345,10 @@ equipments = {
 		archetype = heavy_tank_chassis
 		priority = 90
 		visual_level = 0
-		is_convertable = yes
+
+		can_convert_from = { 
+			ww1_heavy_tank_equipment_1
+		}
 
 		upgrades = {
 			tank_engine_upgrade
@@ -1338,7 +1388,11 @@ equipments = {
 		archetype = heavy_tank_chassis
 		priority = 90
 		visual_level = 0
-		is_convertable = yes
+
+		can_convert_from = { 
+			ww1_heavy_tank_equipment_1
+			ww1_heavy_tank_equipment_2
+		}
 
 		upgrades = {
 			tank_reliability_upgrade
@@ -1388,7 +1442,12 @@ equipments = {
 		archetype = heavy_tank_chassis
 		priority = 90
 		visual_level = 0
-		is_convertable = yes
+
+		can_convert_from = {
+			ww1_heavy_tank_equipment_1
+			ww1_heavy_tank_equipment_2
+			ww1_heavy_tank_equipment_3
+		}
 
 		#Misc Abilities
 		maximum_speed = 5
@@ -1434,7 +1493,13 @@ equipments = {
 		parent = heavy_tank_equipment_1
 		priority = 90
 		visual_level = 1
-		is_convertable = yes
+
+		can_convert_from = { 
+			ww1_heavy_tank_equipment_1
+			ww1_heavy_tank_equipment_2
+			ww1_heavy_tank_equipment_3
+			heavy_tank_equipment_1 
+		}
 		
 		#Misc Abilities
 		maximum_speed = 6
@@ -1465,7 +1530,14 @@ equipments = {
 		parent = heavy_tank_equipment_2
 		priority = 90
 		visual_level = 2
-		is_convertable = yes
+
+		can_convert_from = { 
+			ww1_heavy_tank_equipment_1
+			ww1_heavy_tank_equipment_2
+			ww1_heavy_tank_equipment_3
+			heavy_tank_equipment_1 
+			heavy_tank_equipment_2
+		}
 
 		#Misc Abilities
 		maximum_speed = 6
@@ -1825,7 +1897,11 @@ equipments = {
 		archetype = modern_tank_chassis
 		priority = 170
 		visual_level = 0
-		is_convertable = yes
+
+		can_convert_from = { 
+			medium_tank_equipment_3
+			heavy_tank_equipment_3
+		}
 
 		#Misc Abilities
 		maximum_speed = 10
@@ -1868,6 +1944,8 @@ equipments = {
 		priority = 180
 		visual_level = 0
 		can_convert_from = { 
+			medium_tank_equipment_3
+			heavy_tank_equipment_3
 			modern_tank_equipment_1 
 		}
 		upgrades = {
@@ -1909,6 +1987,8 @@ equipments = {
 		priority = 200
 		visual_level = 0
 		can_convert_from = { 
+			medium_tank_equipment_3
+			heavy_tank_equipment_3
 			modern_tank_equipment_1 
 		}
 		upgrades = {
@@ -1951,6 +2031,8 @@ equipments = {
 		priority = 190
 		visual_level = 0
 		can_convert_from = { 
+			medium_tank_equipment_3
+			heavy_tank_equipment_3
 			modern_tank_equipment_1 
 		}
 		upgrades = {

@@ -4,6 +4,7 @@ equipments = {
 		year = 1915
 
 		is_archetype = yes
+		is_convertable = yes
 		picture = archetype_anti_tank_equipment		
 		type = { 
 			anti_tank
@@ -53,6 +54,10 @@ equipments = {
 		priority = 90
 		visual_level = 1
 
+		can_convert_from = {
+			ww1_anti_air_equipment_1915
+		}
+
 		#Misc Abilities
 		reliability = 0.7
 		
@@ -74,6 +79,11 @@ equipments = {
 		parent = ww1_anti_tank_equipment_1922
 		priority = 90
 		visual_level = 0
+
+		can_convert_from = {
+			ww1_anti_air_equipment_1915
+			ww1_anti_air_equipment_1922
+		}
 
 		#Misc Abilities
 		reliability = 0.8
@@ -104,6 +114,12 @@ equipments = {
 		parent = anti_tank_equipment_1
 		priority = 90
 		visual_level = 1
+
+		can_convert_from = {
+			ww1_anti_air_equipment_1915
+			ww1_anti_air_equipment_1922
+			anti_tank_equipment_1
+		}
 
 		#Misc Abilities
 		reliability = 0.8
@@ -137,6 +153,13 @@ equipments = {
 		parent = anti_tank_equipment_2
 		priority = 90
 		visual_level = 2
+
+		can_convert_from = {
+			ww1_anti_air_equipment_1915
+			ww1_anti_air_equipment_1922
+			anti_tank_equipment_1
+			anti_tank_equipment_2
+		}
 
 		#Misc Abilities
 		reliability = 0.8

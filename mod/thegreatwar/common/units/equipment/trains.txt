@@ -5,6 +5,7 @@ equipments = {
 
 		is_archetype = yes
 		is_buildable = no
+		is_convertable = yes
 		active = no
 		type = train
 		picture = archetype_train
@@ -55,6 +56,10 @@ equipments = {
 			train
 		}
 
+		can_convert_from = { 
+			train_equipment_ww1_old
+		}
+
 		armor_value = 0 # HP = BASE_TRAIN_HP + armor_value
 
 		priority = 10
@@ -75,6 +80,12 @@ equipments = {
 		type = {
 			train
 		}
+
+		can_convert_from = { 
+			train_equipment_ww1_old
+			train_equipment_1
+		}
+
 		priority = 20
 
 		build_cost_ic = 50
